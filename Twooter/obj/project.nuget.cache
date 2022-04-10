@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iMlingdRk5rK1ie4/rNadZmrXIPSxJKLv5iBca/y+VW7Q4IRFcO9ERMjOq1Bwne1vDOePPy0pfo/bvCslTVRGw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pietv\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
