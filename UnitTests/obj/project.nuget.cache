@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E19zHqBQx5WezxUl/cyds1VhlN1UWdW1vb1wbiKfCyLeoAXMXw2tWB5V1CJR1v3vPgUz+uuX0+Q3vb60f5HhmA==",
+  "dgSpecHash": "WbVeiLYxQnZvtftdefWwQEtfzGXS2IWFfZiDP758BfSb3UctKdxKVEENGaUDpdzo/kd8GTAVDbNYCaQfH/1lug==",
   "success": true,
   "projectFilePath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\pietv\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\pietv\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.11.0\\microsoft.testplatform.objectmodel.16.11.0.nupkg.sha512",
     "C:\\Users\\pietv\\.nuget\\packages\\microsoft.testplatform.testhost\\16.11.0\\microsoft.testplatform.testhost.16.11.0.nupkg.sha512",
+    "C:\\Users\\pietv\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\pietv\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\pietv\\.nuget\\packages\\mstest.testadapter\\2.2.7\\mstest.testadapter.2.2.7.nupkg.sha512",
     "C:\\Users\\pietv\\.nuget\\packages\\mstest.testframework\\2.2.7\\mstest.testframework.2.2.7.nupkg.sha512",
