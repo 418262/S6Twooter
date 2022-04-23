@@ -14,11 +14,14 @@ app.MapGet("/user", (Func<User>)(() => {
     };
 }));
 
-app.MapGet("/test", (Func<Status>)(() => {
-    return new Status
-    {
-        code = 200,
-        message = "Ok"
-    };
+app.MapGet("/test", (Func<string>)(() => {
+    return "OK";
+    //new Status
+    //{
+    //    code = 200,
+    //    message = "Ok"
+    //};
 }));
 app.Run();
+
+public partial class Program { }
