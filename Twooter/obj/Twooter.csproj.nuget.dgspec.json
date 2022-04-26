@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj": {}
+    "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj": {
+    "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj",
+        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj",
         "projectName": "Twooter",
-        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj",
+        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj",
         "packagesPath": "C:\\Users\\pietv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\obj\\",
+        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

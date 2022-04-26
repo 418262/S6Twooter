@@ -19,7 +19,6 @@ namespace UnitTests
         public void IntegrationTest_Test()
         {
             Assert.IsTrue(true);
-
         }
     }
 
