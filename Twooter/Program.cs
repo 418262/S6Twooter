@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("AppDb");
 builder.Services.AddTransient<DataSeeder>();
+
 builder.Services.AddDbContext<UserDbContext>(x => x.UseSqlServer(connectionString));
 
 var app = builder.Build();
@@ -35,24 +36,20 @@ if (app.Environment.IsDevelopment())
 //Endpoints
 app.MapGet("/", () => "Hello World!");
 
-app.MapGet("/user/{id}", ([FromServices] UserDbContext db, string id) => {
-    return db.User.Where(x => x.Id == id).FirstOrDefault();
+app.MapGet("/user/{id}", ([FromServices] IDataRepository db, string id) => {
+    return db.GetUserById(id);
 });
 
-app.MapGet("/users", ([FromServices] UserDbContext db) => {
-    return db.User.ToList();
+app.MapGet("/users", ([FromServices] IDataRepository db) => {
+    return db.GetUsers();
 });
 
-app.MapPut("/user/{id}", ([FromServices] UserDbContext db, User user) => {
-    db.User.Update(user);
-    db.SaveChanges();
-    return db.User.Where(x => x.Id == user.Id).FirstOrDefault();
+app.MapPut("/user/{id}", ([FromServices] IDataRepository db, User user) => {
+    return db.PutUser(user);
 });
 
-app.MapPost("/user", ([FromServices] UserDbContext db, User user) => {
-    db.User.Update(user);
-    db.SaveChanges();
-    return db.User.ToList();
+app.MapPost("/user", ([FromServices] IDataRepository db, User user) => {
+    return db.AddUser(user);
 });
 
 //Needed right now for Integrationtest
