@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
+using UserService.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,5 +21,30 @@ app.UseHttpsRedirection();
 
 
 app.MapGet("/", () => "UserService. Hello World!");
+
+//Endpoints
+app.MapGet("/", () => "Hello World!");
+
+app.MapGet("/user/{id}", ([FromServices] IDataRepository db, string id) => {
+    return db.GetUserById(id);
+});
+
+app.MapGet("/users", ([FromServices] IDataRepository db) => {
+    return db.GetUsers();
+});
+
+app.MapPut("/user/{id}", ([FromServices] IDataRepository db, User user) => {
+    return db.PutUser(user);
+});
+
+app.MapPost("/user", ([FromServices] IDataRepository db, User user) => {
+    return db.AddUser(user);
+});
+
+//Needed right now for Integrationtest
+app.MapGet("/test", (Func<string>)(() => {
+    return "OK";
+}));
+app.Run();
 
 app.Run();
