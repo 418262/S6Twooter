@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\UnitTests.csproj": {}
+    "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\UnitTests.csproj": {
+    "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\UnitTests.csproj",
-        "projectName": "UnitTests",
-        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj",
+        "projectName": "UserService",
+        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\pietv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,21 +43,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MSTest.TestAdapter": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[2.2.7, )"
+              "version": "[1.14.0, )"
             },
-            "MSTest.TestFramework": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[2.2.7, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.11.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -71,6 +63,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
