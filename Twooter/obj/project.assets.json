@@ -1917,11 +1917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj",
+      "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj",
       "projectName": "Twooter",
-      "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\Twooter.csproj",
+      "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\Twooter.csproj",
       "packagesPath": "C:\\Users\\pietv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\obj\\",
+      "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\twooter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1993,13 +1993,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\pietv\\source\\repos\\Twooter\\Twooter\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
