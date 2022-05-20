@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g2ov6igah/TNtdECcnf0s2PqZssSTv/x5/SNDk8RMnNFDYA3fuHrZv2mUlBkQXqZeWqDGw9RcgW5/U2E5Xs2kw==",
+  "dgSpecHash": "jK/9yUh6UW1+tlxaAxG/XqfrACT42ZaS4HmKnGeOL/SxtTVdWS9wcllhAgJtegSvhYpbOMfC4aQ0QR9E0DVSQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj",
+  "projectFilePath": "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pietv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

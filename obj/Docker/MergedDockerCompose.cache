@@ -1,0 +1,16 @@
+services:
+  gateway:
+    build:
+      context: C:\Users\pietv\source\repos\Twooter2
+      dockerfile: Gateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: gateway
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /c/Users/pietv/AppData/Roaming/ASP.NET/Https:/root/.aspnet/https:ro
+    - /c/Users/pietv/AppData/Roaming/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

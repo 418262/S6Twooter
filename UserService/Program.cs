@@ -1,8 +1,17 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using UserService.Model;
+using UserService.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("AppDb");
+
+builder.Services.AddTransient<DataSeeder>();
+
+builder.Services.AddScoped<IDataRepository, DataRepository>();
+builder.Services.AddDbContext<UserDbContext>(x => x.UseSqlServer(connectionString));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -11,13 +20,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-var connectionString = builder.Configuration.GetConnectionString("AppDb");
-
-builder.Services.AddScoped<IDataRepository, DataRepository>();
-builder.Services.AddDbContext<UserDbContext>(x => x.UseSqlServer(connectionString));
-builder.Services.AddDbContext<UserDbContext>();
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -25,13 +27,27 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (args.Length == 1 && args[0].ToLower() == "seeddata")
+    SeedData(app);
 
+//Seed Data
+void SeedData(IHost app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
 
-//Endpoints
-app.MapGet("/", () => "UserService. Hello World!");
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<DataSeeder>();
+        service.Seed();
+    }
+}
 
-app.MapGet("/user/{id}", ([FromServices] IDataRepository db, string id) => {
+app.MapGet("/", () =>
+{
+    return "Hello World, UserService.";
+});
+
+app.MapGet("/users/{id}", ([FromServices] IDataRepository db, string id) => {
     return db.GetUserById(id);
 });
 
@@ -39,16 +55,17 @@ app.MapGet("/users", ([FromServices] IDataRepository db) => {
     return db.GetUsers();
 });
 
-app.MapPut("/user/{id}", ([FromServices] IDataRepository db, User user) => {
+app.MapPut("/users/{id}", ([FromServices] IDataRepository db, User user) => {
     return db.PutUser(user);
 });
 
-app.MapPost("/user", ([FromServices] IDataRepository db, User user) => {
+app.MapPost("/users", ([FromServices] IDataRepository db, User user) => {
     return db.AddUser(user);
 });
 
 //Needed right now for Integrationtest
-app.MapGet("/test", (Func<string>)(() => {
-    return "OK";
+app.MapGet("/users/test", (Func<string>)(() => {
+    return "ghvghvh";
 }));
+
 app.Run();

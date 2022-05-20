@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\PostService\\PostService.csproj": {}
+    "C:\\Users\\pietv\\source\\repos\\Twooter2\\PostService\\PostService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\PostService\\PostService.csproj": {
+    "C:\\Users\\pietv\\source\\repos\\Twooter2\\PostService\\PostService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\PostService\\PostService.csproj",
+        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter2\\PostService\\PostService.csproj",
         "projectName": "PostService",
-        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\PostService\\PostService.csproj",
+        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter2\\PostService\\PostService.csproj",
         "packagesPath": "C:\\Users\\pietv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\PostService\\obj\\",
+        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter2\\PostService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.14.0, )"
@@ -70,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

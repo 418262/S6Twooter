@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj": {}
+    "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj": {
+    "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\pietv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\pietv\\source\\repos\\Twooter2\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

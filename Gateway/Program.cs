@@ -1,9 +1,15 @@
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
+//Ocelot configuration
+builder.Configuration.AddJsonFile("ocelot.json");
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddOcelot();
 
 var app = builder.Build();
 
@@ -14,9 +20,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
-app.MapGet("/", () => "Gateway. Hello World!");
+app.UseOcelot().Wait();
 
+//app.UseAuthentication();
+
+//app.MapControllers();
 
 app.Run();
