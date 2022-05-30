@@ -1,5 +1,4 @@
 {
-  "GlobalConfiguration": {},
   "Routes": [
     {
       "DownstreamPathTemplate": "/users",
@@ -10,7 +9,7 @@
           "Port": 49156
         }
       ],
-      "UpstreamPathTemplate": "/api/users",
+      "UpstreamPathTemplate": "/users",
       "UpstreamHttpMethod": [ "Get", "Post" ]
     },
     {
@@ -22,7 +21,7 @@
           "Port": 49156
         }
       ],
-      "UpstreamPathTemplate": "/api/users/{id}",
+      "UpstreamPathTemplate": "/users/{id}",
       "UpstreamHttpMethod": [ "Get", "Put" ]
     },
     {
@@ -34,8 +33,21 @@
           "Port": 49156
         }
       ],
-      "UpstreamPathTemplate": "/api/users/test",
+      "UpstreamPathTemplate": "/users/test",
       "UpstreamHttpMethod": [ "Get" ]
     }
-  ]
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Userservice",
+      "Config": [
+        {
+          "Name": "User microservice API",
+          "Version": "v1",
+          "Url": "https://localhost:5065/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {}
 }
