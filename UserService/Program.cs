@@ -65,7 +65,7 @@ app.MapPost("/users", ([FromServices] IDataRepository db, User user) => {
 
 //Needed right now for Integrationtest
 app.MapGet("/users/test", (Func<string>)(() => {
-    return "ghvghvh";
+    return "Test";
 }));
 
 app.Run();
